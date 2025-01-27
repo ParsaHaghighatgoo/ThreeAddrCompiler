@@ -1,6 +1,4 @@
 # ThreeAddrCompiler
-This project is a compiler designed to process arithmetic expressions with operators (+, -, *, /), parentheses, and integers. It performs lexical analysis using Flex, syntax analysis with Bison, and generates intermediate three-address code for error-free compilation of expressions.
-# ThreeAddrCompiler
 
 A compiler designed to process and evaluate arithmetic expressions using **Flex** and **Bison**, with support for generating intermediate three-address code. This project simplifies expression evaluation while ensuring error-free compilation.
 
