@@ -24,21 +24,39 @@ A compiler designed to process and evaluate arithmetic expressions using **Flex*
 
 ### Input Expression
 a = 30 + 21 / 6 * 14;
-t1 = 21 / 6;
-t2 = t1 * 14;
-t3 = 30 + t2;
-a = t3;
 ###
+t1 = 21 / 6;
+###
+t2 = t1 * 14;
+###
+t3 = 30 + t2;
+####
+a = t3;
+### Another Example
 c = 23 * 24 / (5 + 45) - 16;
+###
 t1 = 5 + 45;
+###
 t2 = 24 / t1;
+###
 t3 = 23 * t2;
+###
 t4 = t3 - 16;
+###
 c = t4;
+### How to Build
+Clone the repository:
+###
 git clone https://github.com/ParsaHaghighatgoo/ThreeAddrCompiler.git
+###
 cd ThreeAddrCompiler
+###
 sudo apt-get install flex bison
+###
 flex lexer.l
+###
 bison -d parser.y
+###
 gcc lex.yy.c parser.tab.c -o compiler
+###
 ./compiler
